@@ -1,320 +1,333 @@
-
-<!DOCTYPE HTML>
-<html lang="zh-hans" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>前言 · Leon Blog</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="Leon Yang">
-        
-        
-    
-    <link rel="stylesheet" href="gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-
-        
-    
-    
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="php.html" />
-    
-    
-
-    
-        <link rel="shortcut icon" href='images/weixin.jpg' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='images/weixin.jpg' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='images/weixin.jpg'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="images/weixin.jpg">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="images/weixin.jpg">
-        
-    
-
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="杨亮 - 全栈开发工程师，拥有8年Web开发经验，精通PHP、JavaScript等技术栈，擅长Laravel、Vue等框架。">
+    <meta name="keywords" content="杨亮,全栈开发,PHP开发,Web开发,Laravel,Vue,ThinkPHP,前端开发,后端开发">
+    <meta name="author" content="杨亮">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / 社交媒体优化 -->
+    <meta property="og:title" content="杨亮 - 全栈开发工程师">
+    <meta property="og:description" content="8年Web开发经验，精通PHP、JavaScript等技术栈，擅长Laravel、Vue等框架">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://flying4055.github.io">
+    <link rel="canonical" href="https://flying4055.github.io">
+    <title>杨亮 - 全栈开发工程师 | 全栈开发专家</title>
     <style>
-    @media only screen and (max-width: 640px) {
-        .book-header .hidden-mobile {
-            display: none;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --tag-bg: #e1f0ff;
+            --timeline-bg: #f1f1f1;
         }
-    }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .skill-category {
+            background: var(--tag-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--secondary-color);
+            border-radius: 3px;
+        }
+
+        .project {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: var(--light-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .tech-stack {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
     </style>
-    <script>
-        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"flying4055","repo":"flying4055.github.io","type":"star","size":"small","count":true}]};
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "杨亮",
+        "jobTitle": "全栈开发工程师",
+        "telephone": "17621207953",
+        "email": "rootyangliang@126.com",
+        "url": "https://flying4055.github.io",
+        "sameAs": [
+            "https://blog.csdn.net/weixin_41258075"
+        ],
+        "knowsAbout": [
+            "PHP",
+            "JavaScript",
+            "Laravel",
+            "Vue",
+            "ThinkPHP",
+            "MySQL",
+            "Redis"
+        ]
+    }
     </script>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <h1>杨亮 - 全栈开发工程师</h1>
 
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
-</div>
+            <section class="contact-info" aria-label="联系方式">
+                <a href="tel:17621207953" aria-label="电话号码">📱 17621207953</a>
+                <a href="mailto:rootyangliang@126.com" aria-label="电子邮箱">📧 rootyangliang@126.com</a>
+                <a href="https://blog.csdn.net/weixin_41258075" target="_blank" rel="noopener" aria-label="技术博客">🖥️ 技术博客</a>
+            </section>
+        </header>
 
-            
-                <nav role="navigation">
-                
+        <main>
+            <section aria-labelledby="education">
+                <h2 id="education">教育背景</h2>
+                <p>计算机科学与技术 | 专科</p>
+            </section>
 
+            <section>
+                <h2>技术能力</h2>
+                <div class="skills">
+                    <div class="skill-category">编程语言: PHP, JavaScript</div>
+                    <div class="skill-category">框架: Laravel, ThinkPHP, Vue2/3, NuxtJS2, ElementUI, Layui</div>
+                    <div class="skill-category">数据库: MySQL, Redis</div>
+                    <div class="skill-category">工具: Git, Docker, GitLab CI/CD</div>
+                </div>
+            </section>
 
-<ul class="summary">
-    
-    
-    
-        
-        <li>
-            <a href="https://flying4055.github.io" target="_blank" class="custom-link">主页</a>
-        </li>
-    
-    
+            <section>
+                <h2>工作经历</h2>
+                <div class="experience-item">
+                    <h3>武汉匿迹科技有限公司 | 全栈开发工程师 (2021.04-2024.05)</h3>
+                    <ul>
+                        <li>主导核心项目架构重构，采用Laravel框架实现模块化改造，通过Redis缓存优化和MySQL索引优化，将接口响应时间从32秒优化至200毫秒</li>
+                        <li>设计并实现多渠道支付网关系统，整合支付宝/微信/Paypal等支付方式，日均处理交易量50,000+笔，支付成功率达99.2%</li>
+                        <li>建立基于GitLab CI/CD的自动化部署流程，实现代码自动化测试和部署，部署效率提升300%</li>
+                        <li>主导技术架构升级，引入Docker容器化部署，提升系统稳定性和可维护性</li>
+                    </ul>
+                </div>
 
-    
-    <li class="divider"></li>
-    
+                <div class="experience-item">
+                    <h3>湖北聚优汇有限公司 | 后端开发 (2020.03-2021.02)</h3>
+                    <ul>
+                        <li>负责电商平台核心功能开发和性能优化，通过数据库查询优化和缓存策略改进，使系统响应时间减少40%</li>
+                        <li>采用微服务架构重构系统核心模块，实现业务解耦和横向扩展，团队开发效率提升35%</li>
+                        <li>设计并实现分布式日志监控系统，实现系统异常实时告警，将系统可用性提升至99.9%</li>
+                    </ul>
+                </div>
 
-    
-        
-        
-    
-        <li class="chapter active" data-level="1.1" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    前言
-            
-                </a>
-            
+                <div class="experience-item">
+                    <h3>深圳通众广告传媒有限公司 | PHP开发工程师 (2016.10-2019.12)</h3>
+                    <ul>
+                        <li>主导开发公众号和小程序后台系统，优化用户体验和系统性能，带动平台日活用户突破5万</li>
+                        <li>设计并实现智能消息推送系统，根据用户行为分析制定推送策略，提升用户留存率25%</li>
+                        <li>开发社交分享功能模块，实现多平台内容分发，带动平台新增用户环比增长40%</li>
+                    </ul>
+                </div>
+            </section>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="php.html">
-            
-                <a href="php.html">
-            
-                    
-                    PHP
-            
-                </a>
-            
+            <section>
+                <h2>项目经历</h2>
+                <div class="project">
+                    <h3>DAD商会平台 (2023.09-2024.03)</h3>
+                    <div class="tech-stack">技术栈: Laravel + Vue3 + MySQL + Redis + Dcat Admin</div>
+                    <ul>
+                        <li>设计并实现Discord消息实时同步系统，采用WebSocket技术，将消息延迟控制在500ms以内</li>
+                        <li>开发多语言国际化解决方案，支持中英日三语种动态切换，覆盖率达100%</li>
+                        <li>集成多渠道支付系统，实现支付宝/微信等支付方式，支付成功率达99.2%</li>
+                        <li>开发基于OCR的装备属性识别系统，准确率达98%，大幅提升用户体验</li>
+                        <li>构建高可用的短信通知系统，采用消息队列实现削峰，消息到达率达99.5%</li>
+                    </ul>
+                </div>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="vue.html">
-            
-                <a href="vue.html">
-            
-                    
-                    VUE
-            
-                </a>
-            
+                <div class="project">
+                    <h3>智能聊天小程序 (2023.08-2023.09)</h3>
+                    <div class="tech-stack">技术栈: Laravel + Vue2 + MySQL + Redis + ChatGPT API</div>
+                    <ul>
+                        <li>设计并实现ChatGPT对话系统，支持多轮上下文关联对话，提升对话准确性</li>
+                        <li>优化数据库结构和查询性能，通过添加合适索引和缓存策略，将响应时间控制在200ms内</li>
+                        <li>开发小程序端到Web端的跨平台解决方案，实现数据同步和状态一致性</li>
+                    </ul>
+                </div>
 
-            
-        </li>
-    
+                <div class="project">
+                    <h3>悠米APP (2021.08-2023.08)</h3>
+                    <div class="tech-stack">技术栈: Laravel + NuxtJS2 + MySQL + Redis</div>
+                    <ul>
+                        <li>主导系统架构升级，从ThinkPHP迁移至Laravel框架，实现代码重构和性能优化</li>
+                        <li>设计并实现多样化支付系统，支持Paypal、Apple内购和支付宝等支付方式</li>
+                        <li>开发社交功能模块，包括朋友圈、直播和即时通讯功能，日活用户突破10万</li>
+                        <li>实现基于地理位置的个性化推荐系统，用户留存率提升30%</li>
+                    </ul>
+                </div>
 
-    
+                <div class="project">
+                    <h3>论文改重网 (2021.05-2021.07)</h3>
+                    <div class="tech-stack">技术栈: FastAdmin + NuxtJS2 + Python API + 微信支付</div>
+                    <ul>
+                        <li>开发论文查重核心算法，结合同义词库优化匹配逻辑，查重准确率达95%</li>
+                        <li>实现智能文本编辑功能，支持一键同义词替换，编辑效率提升40%</li>
+                        <li>集成quill-editor实现在线协作编辑，支持多人实时编辑和历史版本管理</li>
+                        <li>优化SEO策略，核心关键词排名进入搜索引擎前三页，带来可观自然流量</li>
+                    </ul>
+                </div>
 
-    <li class="divider"></li>
+                <div class="project">
+                    <h3>同城鲜达 (2020.06-2021.03)</h3>
+                    <div class="tech-stack">技术栈: ThinkPHP + Layui + MySQL + Redis</div>
+                    <ul>
+                        <li>开发生鲜电商H5平台，支持商品管理、订单处理等核心功能，日订单量超500单</li>
+                        <li>实现基于用户行为的智能商品排序算法，提升用户点击率35%</li>
+                        <li>开发灵活的账期支付系统，支持多种结算方式，账期订单占比达45%</li>
+                        <li>优化MySQL查询性能，通过索引重构，将查询响应时间减少200ms</li>
+                    </ul>
+                </div>
 
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本书使用 GitBook 发布
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >前言</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#leon-blog"><b></b>Leon Blog</a></li></ul></div><a href="#leon-blog" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="leon-blog"><a name="leon-blog" class="anchor-navigation-ex-anchor" href="#leon-blog"><i class="fa fa-link" aria-hidden="true"></i></a><a name="leon-blog" class="plugin-anchor" href="#leon-blog"><i class="fa fa-link" aria-hidden="true"></i></a>Leon Blog</h1>
-<p><a href="https://flying4055.github.io" target="_blank">https://flying4055.github.io</a></p>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                
-                <a href="php.html" class="navigation navigation-next navigation-unique" aria-label="Next page: PHP">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"PHP","level":"1.2","depth":1,"path":"php.md","ref":"php.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://flying4055.github.io"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./images/weixin.jpg","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./images/weixin.jpg","bookmark":"./images/weixin.jpg","appleTouch":"./images/weixin.jpg","appleTouchMore":{"120x120":"./images/weixin.jpg","180x180":"./images/weixin.jpg"}},"github-buttons":{"buttons":[{"user":"flying4055","repo":"flying4055.github.io","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Leon Yang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Leon Blog","language":"zh-hans","links":{"sidebar":{"主页":"https://flying4055.github.io"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"README.md","mtime":"2019-04-26T08:59:18.983Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-26T09:05:26.891Z"},"basePath":".","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
-</html>
-
+                <div class="project">
+                    <h3>砸点广告系统 (2017.10-2019.12)</h3>
+                    <div class="tech-stack">技术栈: ThinkPHP + Vue.js + ElementUI + 高德地图API</div>
+                    <ul>
+                        <li>开发广告资源管理系统，实现全国20+城市的广告点位可视化管理</li>
+                        <li>设计高效的数据导入方案，支持Excel批量导入，提升数据处理效率60%</li>
+                        <li>实现基于RBAC的权限管理系统，支持灵活的角色权限配置</li>
+                        <li>开发富文本编辑功能，支持多媒体内容管理，提升内容发布效率50%</li>
+                    </ul>
